@@ -17,6 +17,29 @@ function date() {
 	setInterval(time, 60000);
 }
 
+function contactrealtimeval() {
+	var first_name = document.forms["contact"]["first_name"].value;
+	var last_name = document.forms["contact"]["last_name"].value;
+	var email = document.forms["contact"]["email"].value;
+	var message = document.forms["contact"]["message"].value;
+	document.getElementById("first_name").style.backgroundColor = ""
+	document.getElementById("last_name").style.backgroundColor = ""
+	document.getElementById("email").style.backgroundColor = ""
+	document.getElementById("message").style.backgroundColor = ""
+	if (first_name === "") {
+		document.getElementById("first_name").style.backgroundColor = "red"
+	}
+	if (last_name === "") {
+		document.getElementById("last_name").style.backgroundColor = "red"
+	}
+	if (email === "") {
+		document.getElementById("email").style.backgroundColor = "red"
+	}
+	if (message === "") {
+		document.getElementById("message").style.backgroundColor = "red"
+	}
+}
+
 function rollon(leftside) {
 	leftside.src = "media/banner2.png";
 }
