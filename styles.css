@@ -65,15 +65,16 @@ section.section {
 	text-align: justify;
 }
 
-footer.footer, footer.p{
-	height: 50px;
+footer.footer, footer.p {
+	height: 75px;
 	margin-left: -20px;
-	margin-right: -10px;
+	margin-right: -10px; 
 	margin-bottom: -10px;
 	text-align: left;
 	background-color: #3E4D22;
 	width: 110%;
 	float: left;
+	padding-left: 50px;
 }
 
 
