@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+	<head>
+	<title>Solent Pizzas</title>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="icon" type="image/png" href="media/favicon.png"> 
+	<script type="text/javascript" src="scripts.js"></script>
+   	</head>
+	<body onload = "time(); date();"> 
+	<header class="header">
+	<img alt="Header Image" src="media/header.png"/> 
+	</header>
+	<nav>
+	<ul>
+	<li> <a href="order.html">Order</a> </li>
+	<li> <a href="index.html">Home</a> </li>
+	<li> <a href="contact.html">Contact</a> </li>
+	</ul>
+	</nav>
+	<aside class="leftside">
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20128.68852839274!2d-1.3940459357080983!3d50.90362358114061!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487476a98cbbfddf%3A0x3e043564e2a58ca1!2sDomino&#39;s+Pizza+-+Southampton+-+The+Avenue!5e0!3m2!1sen!2suk!4v1492520578960" width="233" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+	</aside>
+	<section class="section">
+	<h1> Contact Us </h1>
+	<form id="contact" name="contact" class="contact" onsubmit="return contactval()">
+	First Name <input type="text" name="first_name" id="first_name"> <br>
+	Last Name <input type="text" name="last_name" id="last_name"> <br>
+	Email <input type="text" name="email" id="email"> <br> 
+	Phone <input type="text" name="phone" id="phone"> <br> 
+	Message <input type="text" name="message" id="message"> <br>
+	<input type="submit" value="Send" name="send">	
+	</form>
+	</section>
+	<footer class="footer">
+	<p id="timeout"> </p> 
+	<p id="dateout"> </p>
+	</footer>		
+	</body>
+</html>

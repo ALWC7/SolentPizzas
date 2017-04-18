@@ -17,5 +17,25 @@ function date() {
 	setInterval(time, 60000);
 }
 
-
+function contactval() {
+	var errormsg = ""
+	var first_name = document.forms["contact"]["first_name"].value;
+	var last_name = document.forms["contact"]["last_name"].value;
+	var email = document.forms["contact"]["email"].value;
+	var message = document.forms["contact"]["message"].value;
+	if (first_name === "" || last_name === "" || email === "" || message === "")
+	{
+		errormsg = "Ensure you have entered your First Name, Last Name, Email and a Message"; 
+	}
+	if (errormsg != "")
+	{
+		alert(errormsg);
+		return false;
+	}
+	else
+	{
+		return true;
+	}
+}
+	
 
