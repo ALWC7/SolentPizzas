@@ -17,6 +17,13 @@ function date() {
 	setInterval(time, 60000);
 }
 
+function rollon(leftside) {
+	leftside.src = "media/banner2.png";
+}
+
+function rolloff(leftside) { 
+	leftside.src = "media/banner.png";
+}
 function contactval() {
 	var errormsg = ""
 	var first_name = document.forms["contact"]["first_name"].value;
