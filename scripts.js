@@ -67,5 +67,42 @@ function contactval() {
 		return true;
 	}
 }
+
+function orderval() {
+	var errormsg = "selct:";
+	var basenum = document.getElementsByName("base");
+	var isbaseckd = false;
+	for (var counter = 0; counter < basenum.length; counter++) {
+	if(basenum[counter].checked) {
+	isbaseckd = true;
+	break;
+	}
+	}
+	if (!isbaseckd) 
+	{
+	errormsg = errormsg + " a base";
+	}
+	var toppingnum = document.getElementsByName("topp");
+	var istoppingckd = false;
+	for (counter = 0; counter < toppingnum.length; counter++) {
+	if(toppingnum[counter].checked) {
+	istoppingckd = true;
+	break;
+		}
+	}
+	if (!istoppingckd)
+	{
+		errormsg = errormsg + " a topping";
+	}	
+	if (!isbaseckd + !istoppingckd)
+	{
+		alert(errormsg);
+		return false;
+	}
+	else
+	{
+		return true;
+	}
+}
 	
 

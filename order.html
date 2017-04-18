@@ -23,7 +23,18 @@
 	<section class="section">
 	<h1> Order </h1>
 	<form id="order" name="order" class="ordert" onsubmit="return orderval()">
-	
+	<p> Pizza Bases </p>
+	<input class="base" type="radio" onclick="updatetotal()" name="base" id="smallbase"> Small <span class="price"> £5</span> <br>
+	<input class="base" type="radio" onclick="updatetotal()" name="base" id="mediumbase"> Medium <span class="price"> £7.50</span> <br>	
+	<input class="base" type="radio" onclick="updatetotal()" name="base" id="largebase"> Large <span class="price"> £10</span> <br>
+	<input class="base" type="radio" onclick="updatetotal()" name="base" id="xlargebase"> X-Large <span class="price"> £12.50</span> <br>
+	<p> Toppings </p>
+	<input class="topp" type="checkbox" onclick="updatetotal()" name="topp" id="cheese"> Cheese <span class="price"> £0.20</span> <br>
+	<p> sides </p>
+	<input class="side" type="checkbox" onclick="updatetotal()" name="side" id="chips"> Chips <span class="price"> £1.50</span> <br>
+	<p> Delivery Info </p>
+	Address <input type="text"> <br>
+	Postcode <input type="text"> <br>
 	<input type="submit" value="Send" name="send">	
 	</form>
 	</section>
